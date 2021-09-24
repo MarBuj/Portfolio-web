@@ -1,0 +1,204 @@
+main {
+  .content {
+    .about-number {
+      position: absolute;
+      left: 1rem;
+      top: -0.2rem;
+      font-size: 6rem;
+      @media screen and (max-width: 425px) {
+        left: 0.5rem;
+        top: 0rem;
+        font-size: 3rem;
+      }
+      @media (min-width: 426px) and (max-width: 768px) {
+        left: 0.7rem;
+        top: -0.2rem;
+        font-size: 5rem;
+      }
+    }
+    .about-title {
+      position: absolute;
+      right: 5rem;
+      bottom: -5rem;
+      font-size: 6rem;
+      @media screen and (max-width: 425px) {
+        font-size: 2.5rem;
+        bottom: -3rem;
+        right: 1.5rem;
+      }
+      @media (min-width: 426px) and (max-width: 768px) {
+        font-size: 5rem;
+        right: 3.5rem;
+        bottom: -6rem;
+      }
+    }
+    .about-top {
+      padding: 0 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      @media screen and (max-width: 425px) {
+        display: block;
+        padding: 0rem 0.5rem;
+        margin-bottom: 0.5rem;
+      }
+      @media (min-width: 426px) and (max-width: 768px) {
+        padding: 0rem 1rem;
+      }
+      .about-top-line {
+        content: "";
+        position: relative;
+        width: 15%;
+        height: 0.125rem;
+        background-color: rgba(255, 255, 255, 0.7);
+        @media screen and (max-width: 425px) {
+          display: block;
+          margin: 0.5rem 0;
+          width: 100%;
+        }
+        @media (min-width: 426px) and (max-width: 768px) {
+          display: none;
+        }
+      }
+      .download {
+        .fa-file-download {
+          animation: floating 1s infinite;
+          margin-right: 0.2rem;
+          @media screen and (max-width: 425px) {
+            height: 1rem;
+          }
+        }
+      }
+    }
+    .about-middle {
+      padding: 0 1rem;
+      margin-bottom: 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      @media screen and (max-width: 425px) {
+        padding: 0rem 0.5rem;
+        display: block;
+      }
+      @media (min-width: 426px) and (max-width: 768px) {
+        padding: 0rem 0.5rem;
+        display: block;
+        margin-bottom: 1rem;
+      }
+      .phrase {
+        padding: 0.5rem;
+        display: block;
+        width: 30%;
+        text-align: center;
+        margin-top: 1.5rem;
+        @media screen and (max-width: 425px) {
+          width: 100%;
+          margin-top: 1rem;
+          padding: 0;
+          text-align: left;
+        }
+        @media (min-width: 426px) and (max-width: 768px) {
+          text-align: center;
+          width: 100%;
+          margin-top: 0.5rem;
+        }
+        b {
+          font-weight: 700;
+          color: rgba(255, 255, 255, 1);
+        }
+        .phrase1,
+        .phrase2,
+        .phrase3 {
+          display: inline;
+        }
+        @media screen and (max-width: 768px) {
+          .phrase2,
+          .phrase3 {
+            display: none;
+          }
+        }
+        .dots1,
+        .dots2,
+        .dors3 {
+          display: none;
+          color: rgba(255, 255, 255, 1);
+        }
+        @media screen and (max-width: 768px) {
+          .dots2,
+          .dors3 {
+            display: inline;
+          }
+        }
+
+        .more1,
+        .more2,
+        .more3 {
+          display: none;
+          font-style: italic;
+          color: rgba(255, 255, 255, 1);
+          cursor: pointer;
+        }
+        @media screen and (max-width: 768px) {
+          .more2,
+          .more3 {
+            display: inline;
+          }
+        }
+      }
+    }
+    .about-bottom {
+      padding: 0 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      @media screen and (max-width: 425px) {
+        padding: 0rem 0.5rem;
+        display: block;
+      }
+      @media (min-width: 426px) and (max-width: 768px) {
+        display: block;
+      }
+      .about-bottom-line {
+        content: "";
+        position: relative;
+        width: 15%;
+        height: 0.125rem;
+        background-color: rgba(255, 255, 255, 0.7);
+        @media screen and (max-width: 425px) {
+          display: block;
+          margin-bottom: 1.5rem;
+          width: 100%;
+        }
+        @media (min-width: 426px) and (max-width: 768px) {
+          display: block;
+          width: 100%;
+          margin-bottom: 1rem;
+        }
+      }
+      @media screen and (max-width: 768px) {
+        h3 {
+          display: none;
+        }
+      }
+      .tools {
+        display: flex;
+        justify-content: space-between;
+        .tool-icon {
+          height: 2rem;
+          margin: 1rem;
+          @media screen and (max-width: 425px) {
+            height: 1.7rem;
+            margin: 0;
+          }
+          @media (min-width: 426px) and (max-width: 768px) {
+            height: 1.7rem;
+            margin: 0.5rem;
+          }
+          @media (min-width: 769px) and (max-width: 1440px) {
+            margin: 0.75rem;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,95 @@
+main {
+  .content {
+    .home-number {
+      position: absolute;
+      left: 0.9rem;
+      top: -0.2rem;
+      font-size: 6rem;
+      @media screen and (max-width: 425px) {
+        left: 0.5rem;
+        top: -0.1rem;
+        font-size: 3rem;
+      }
+      @media (min-width: 426px) and (max-width: 768px) {
+        left: 0.7rem;
+        top: -0.2rem;
+        font-size: 5rem;
+      }
+    }
+    .home-title {
+      position: absolute;
+      right: 4rem;
+      bottom: -5rem;
+      font-size: 6rem;
+      @media screen and (max-width: 425px) {
+        font-size: 2.5rem;
+        bottom: -4rem;
+        right: 1rem;
+      }
+      @media (min-width: 426px) and (max-width: 768px) {
+        font-size: 5rem;
+        right: 2rem;
+        bottom: -6.5rem;
+      }
+    }
+    .home-top {
+      h3 {
+        position: relative;
+        left: 2rem;
+        @media screen and (max-width: 425px) {
+          left: 0.5rem;
+        }
+        @media (min-width: 426px) and (max-width: 768px) {
+          left: 1.5rem;
+        }
+        .box {
+          position: absolute;
+          height: 2px;
+          bottom: -4px;
+          width: 4.5rem;
+          display: inline-block;
+          background: white;
+          @media screen and (max-width: 425px) {
+            width: 3.6rem;
+          }
+          @media (min-width: 426px) and (max-width: 768px) {
+            width: 3.7rem;
+          }
+        }
+        .hi {
+          display: inline-block;
+        }
+      }
+    }
+    .home-middle {
+      h1 {
+        position: relative;
+        left: 6.1rem;
+        @media screen and (max-width: 425px) {
+          left: 0.5rem;
+        }
+        @media (min-width: 426px) and (max-width: 768px) {
+          left: 3.1rem;
+        }
+        @media (min-width: 769px) and (max-width: 1440px) {
+          left: 8.1rem;
+        }
+      }
+    }
+    .home-bottom {
+      h3 {
+        position: relative;
+        left: 28rem;
+        @media screen and (max-width: 425px) {
+          left: 0.5rem;
+        }
+        @media (min-width: 426px) and (max-width: 768px) {
+          left: 22rem;
+        }
+        .cursor {
+          opacity: 0;
+        }
+      }
+    }
+  }
+}

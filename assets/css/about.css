@@ -1,0 +1,24 @@
+.about {
+  width: 80%;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.75rem;
+}
+
+.about .phrase {
+  margin-top: 1.5rem;
+}
+
+.about .phrase span {
+  font-weight: 700;
+  color: white;
+}
+
+.skills {
+  width: 60%;
+}
+
+.skills .icons img {
+  height: 35px;
+  margin-right: 10px;
+}
+/*# sourceMappingURL=about.css.map */
